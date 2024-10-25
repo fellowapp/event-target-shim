@@ -4,7 +4,7 @@ export as namespace EventTargetShim
  * `Event` interface.
  * @see https://dom.spec.whatwg.org/#event
  */
-export interface Event {
+export interface Event<T> extends CustomEvent<T>  {
     /**
      * The type of this event.
      */
